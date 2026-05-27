@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/btnSearchAutomatic.css">
+    <script src="js/index.js" type="module" defer></script>
+    <script src="js/btnHistory.js" type="module" defer></script>
+    <script src="js/btnAutomatic.js" type="module" defer></script>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <title>Ideas Weather</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.svg" alt="logo">
+            <h2>IDEAS WEATHER</h2>
+        </div>
+
+        <div class="queryMenu">
+            <img src="img/menu.svg" alt="" id="menu">
+            
+            <div class="menu">
+                <input type="button" value="Pesquisa automática" id="automatic">
+                <input type="button" value="Enviar histórico" id="history">
+                <input type="button" value="Sair do sistema">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="map">
+            <iframe src="https://www.google.com/maps?q=%20Brasil&output=embed" style="border:0;" allowfullscreen="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="searchAutomatic">
+            <div>
+                <label for="">Escolha a cidade para pesquisa automática</label>
+                <br>
+                <input type="search" name="cityAuto" id="cityAuto" autofocus autocomplete="off" placeholder="Cidades do Brasil...">
+                <br>
+                <span id="spanCity" class="span"></span>
+            </div>
+            <div>
+                <label for="">Repetir quantas vezes</label>
+                <br>
+                <select name="quantityRepeat" id="quantityRepeat">
+                    <option value="">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <span id="spanRepeat" class="span"></span>
+            </div>
+            
+            <div>        
+                <label for="">Repetir em intervalos de:</label>
+                <br>
+                <select name="intervalRepeat" id="intervalRepeat">
+                    <option value="">-</option>
+                    <option value="2">02 segundos</option>
+                    <option value="4">04 segundos</option>
+                    <option value="8">08 segundos</option>
+                    <option value="10">10 segundos</option>
+                    <option value="12">12 segundos</option>
+                </select>
+                <br>
+                <span id="spanInterval" class="span"></span>
+            </div>
+            <div>
+                <input type="button" value="Confirmar" id="btnConfirm">
+                <input type="button" value="Iniciar busca" id="startSearch" disabled>
+                <input type="button" value="Apagar" id="clearList" disabled>
+            </div>
+            <progress id="prog"></progress>
+
+            <div>
+                <ul id="ulAuto"></ul>
+            </div>
+        </div>
+
+        <div class="states">
+            <div class="inputSearch">
+                <input type="search" name="search" id="search" autofocus autocomplete="off" placeholder="Cidades do Brasil...">
+                
+                <input type="button" value="Pesquisar" id="btnSearch">
+            </div>
+
+            <h2 id="city">CIDADE</h2>
+            <div id="table">
+                <table class="forecast">
+                    <tr>
+                        <td>Previsão:</td>
+                        <td id="forecast" class="width">-</td>
+                        <td>
+                            <img src="" id="imgForecast">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Temp. máxima:</td>
+                        <td id="tempMax" class="width">-</td>
+                        <td>
+                            <img src="img/iconPrevisaoTempo/outrosCampos/tempMax.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Temp. mínima:</td>
+                        <td id="tempMin" class="width">-</td>
+                        <td>
+                            <img src="img/iconPrevisaoTempo/outrosCampos/tempMin.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sensação térmica:</td>
+                        <td id="thermal" class="width">-</td>
+                        <td>
+                            <img src="img/iconPrevisaoTempo/outrosCampos/thermal.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Precipitação chuva:</td>
+                        <td id="rain" class="width">-</td>
+                        <td>
+                            <img src="img/iconPrevisaoTempo/outrosCampos/rain.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Umidade:</td>
+                        <td id="humidity" class="width">-</td>
+                        <td>
+                            <img src="img/iconPrevisaoTempo/outrosCampos/humidity.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pressão atm/nível mar:</td>
+                        <td id="pressure" class="width">-</td>
+                        <td>
+                            <img src="img/iconPrevisaoTempo/outrosCampos/pressure.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Visibilidade:</td>
+                        <td id="visibility" class="width">-</td>
+                        <td>
+                            <img src="img/iconPrevisaoTempo/outrosCampos/visibility.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Velocidade vento:</td>
+                        <td id="wind" class="width">-</td>
+                        <td>
+                            <img src="img/iconPrevisaoTempo/outrosCampos/wind.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Direção vento:</td>
+                        <td id="direcWind" class="width">-</td>
+                        <td>
+                            <img src="img/iconPrevisaoTempo/outrosCampos/direcWind.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Latitude:</td>
+                        <td id="latitude" class="width">-</td>
+                        <td>
+                            <img src="img/iconPrevisaoTempo/outrosCampos/latitude_longitude.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Longitude:</td>
+                        <td id="longitude" class="width">-</td>
+                        <td>
+                            <img src="img/iconPrevisaoTempo/outrosCampos/latitude_longitude.svg" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p class="time"></p>
+            <p class="date"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
