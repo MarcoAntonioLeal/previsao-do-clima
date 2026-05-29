@@ -133,8 +133,6 @@ git clone URL_DO_REPOSITORIO
 
 ## 📌 Melhorias futuras
 
-* Armazenamento do histórico em LocalStorage
-* Tema dark/light
 * Pesquisa internacional
 * Integração com backend
 
