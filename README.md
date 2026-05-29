@@ -1,4 +1,4 @@
-# Projeto Previsao do Clima
+# Projeto Previsão do Clima
 
 # 🌦️ Ideas Weather
 
