@@ -113,22 +113,7 @@ SVG Repo:
 
 ## 📷 Screenshots
 
-<img width="1919" height="878" alt="image" src="https://github.com/user-attachments/assets/9e44c86e-be56-42b4-a7e2-8e5be6d36031" />
-
-
-Exemplo:
-
-```md
-![Tela principal](./img/readme/home.png)
-```
-
-Você também pode adicionar gifs mostrando:
-
-* Pesquisa de cidades
-* Automação funcionando
-* Responsividade mobile
-
----
+<img width="1915" height="882" alt="image" src="https://github.com/user-attachments/assets/3f36e3b9-f903-4491-b624-c39be1f4eab6" />
 
 ## ▶️ Como executar o projeto
 
