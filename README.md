@@ -49,6 +49,20 @@ Interface adaptada para diferentes tamanhos de tela, oferecendo boa experiência
 
 ---
 
+## 📷 Screenshots
+
+<img width="1915" height="882" alt="image" src="https://github.com/user-attachments/assets/3f36e3b9-f903-4491-b624-c39be1f4eab6" />
+
+---
+
+## 🔗 Deploy
+
+Acesse o projeto online:
+
+[https://seuusuario.github.io/ideas-weather](https://marcoantonioleal.github.io/previsao-do-clima/)/
+
+---
+
 ## 🛠️ Tecnologias utilizadas
 
 * HTML5
@@ -110,10 +124,6 @@ SVG Repo:
 [SVG Repo](https://www.svgrepo.com/?utm_source=chatgpt.com)
 
 ---
-
-## 📷 Screenshots
-
-<img width="1915" height="882" alt="image" src="https://github.com/user-attachments/assets/3f36e3b9-f903-4491-b624-c39be1f4eab6" />
 
 ## ▶️ Como executar o projeto
 
