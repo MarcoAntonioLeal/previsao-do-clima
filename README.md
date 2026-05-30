@@ -4,6 +4,18 @@
 
 Aplicação front-end desenvolvida para consulta de previsão do tempo de cidades brasileiras utilizando a API OpenWeather.
 
+<img width="1915" height="882" alt="image" src="https://github.com/user-attachments/assets/3f36e3b9-f903-4491-b624-c39be1f4eab6" />
+
+---
+
+## 🔗 Deploy
+
+Acesse o projeto online:
+
+[https://seuusuario.github.io/ideas-weather](https://marcoantonioleal.github.io/previsao-do-clima/)/
+
+---
+
 ## 📌 Objetivo
 
 O projeto tem como objetivo, fornecer informações climáticas em tempo real de cidades do Brasil, exibindo dados como:
@@ -46,20 +58,6 @@ Os dados pesquisados podem ser armazenados e enviados para o console do navegado
 ### 📱 Responsividade
 
 Interface adaptada para diferentes tamanhos de tela, oferecendo boa experiência tanto em desktop quanto em dispositivos móveis.
-
----
-
-## 📷 Screenshots
-
-<img width="1915" height="882" alt="image" src="https://github.com/user-attachments/assets/3f36e3b9-f903-4491-b624-c39be1f4eab6" />
-
----
-
-## 🔗 Deploy
-
-Acesse o projeto online:
-
-[https://seuusuario.github.io/ideas-weather](https://marcoantonioleal.github.io/previsao-do-clima/)/
 
 ---
 
